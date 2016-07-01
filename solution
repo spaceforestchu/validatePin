@@ -1,0 +1,19 @@
+        function validatePIN (pin) {
+        var nums = /^[0-9]+$/g;
+        
+        if(pin.length === 4 || pin.length === 6){
+             if(pin.match(nums)){
+                return true
+             } else {
+               return false;
+             } 
+         }
+         
+         if(pin.length !== 4 || pin.length !== 6){
+           return false
+         }
+         
+         
+        }
+        
+        validatePIN("1233")
